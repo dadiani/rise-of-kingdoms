@@ -32,7 +32,9 @@
         "serve": {
           "builder": "@nrwl/node:execute",
           "options": {
-            "buildTarget": "api:build"
+            "buildTarget": "api:build",
+            "inspect": true,
+            "port": 9229
           }
         },
         "lint": {
@@ -83,7 +85,7 @@
               "apps/rok-stat/src/favicon.ico",
               "apps/rok-stat/src/assets"
             ],
-            "styles": ["apps/rok-stat/src/styles.css"],
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css", "apps/rok-stat/src/styles.css"],
             "scripts": []
           },
           "configurations": {
